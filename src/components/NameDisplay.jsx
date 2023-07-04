@@ -12,16 +12,16 @@ const NameDisplay = () => {
     }
   });
   return (
-    <div>
+    <div className="baby-names">
       {babyNamesData.map((baby, index) =>
         baby.sex === "m" ? (
-          <span key={index} className="name-boy">
+          <p key={index} className="name-boy">
             {baby.name}
-          </span>
+          </p>
         ) : (
-          <span key={index} className="name-girl">
+          <p key={index} className="name-girl">
             {baby.name}
-          </span>
+          </p>
         )
       )}
     </div>
